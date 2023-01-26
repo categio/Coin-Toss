@@ -15,5 +15,24 @@ namespace Coin_Toss
         {
             InitializeComponent();
         }
+
+        private void tossButton_Click(object sender, EventArgs e)
+        {
+            //create a new Coin() object.
+            Coin myCoin = new Coin();
+
+            //Clear the ListBox
+            outputListBox.Items.Clear();
+
+            //Toss the coin 5 times.
+            for (int count = 0; count < 5; count++)
+            {
+                //Toss the coin.
+                myCoin.Toss();
+
+                //Display the side that is up.
+                outputListBox.Items.Add(myCoin.GetSideUp());
+            }
+        }
     }
 }

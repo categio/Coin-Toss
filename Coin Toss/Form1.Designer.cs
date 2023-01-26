@@ -50,6 +50,7 @@
             this.tossButton.TabIndex = 4;
             this.tossButton.Text = "Toss Five Times";
             this.tossButton.UseVisualStyleBackColor = true;
+            this.tossButton.Click += new System.EventHandler(this.tossButton_Click);
             // 
             // outputListBox
             // 
