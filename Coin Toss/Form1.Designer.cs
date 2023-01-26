@@ -39,8 +39,9 @@
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 39);
             this.exitButton.TabIndex = 5;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // tossButton
             // 
@@ -48,7 +49,7 @@
             this.tossButton.Name = "tossButton";
             this.tossButton.Size = new System.Drawing.Size(75, 39);
             this.tossButton.TabIndex = 4;
-            this.tossButton.Text = "Toss Five Times";
+            this.tossButton.Text = "&Toss Five Times";
             this.tossButton.UseVisualStyleBackColor = true;
             this.tossButton.Click += new System.EventHandler(this.tossButton_Click);
             // 

@@ -15,6 +15,11 @@ namespace Coin_Toss
         {
             InitializeComponent();
         }
+        private void ShowCoinStatus(Coin coin)
+        {
+            MessageBox.Show("This side of the coin is up: " +
+                coin.GetSideUp());
+        }
 
         private void tossButton_Click(object sender, EventArgs e)
         {
@@ -30,9 +35,19 @@ namespace Coin_Toss
                 //Toss the coin.
                 myCoin.Toss();
 
+                //messagebox to show the side of the coin that it landed on.
+                ShowCoinStatus(myCoin);
+
                 //Display the side that is up.
                 outputListBox.Items.Add(myCoin.GetSideUp());
+
             }
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            //Close the form.
+            this.Close();
         }
     }
 }
